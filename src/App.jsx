@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import './App.css';
 import Background from "./components/Background";
 import Contact from "./components/Contact";
 import Corp from "./components/Corp";
@@ -20,7 +19,7 @@ function App() {
       <Routes>
         <Route path ="/" element={<Homepage />} />
         <Route path ="/Testimonials" element={<Testimonials />} />
-        <Route path ="/ThanksTo" element={<Thanks />} />
+        <Route path ="/Thanks" element={<Thanks />} />
         <Route path ="/Corp" element={<Corp />} />
         <Route path ="/Contact" element={<Contact />} />
         <Route path ="/Background" element={<Background />} />
