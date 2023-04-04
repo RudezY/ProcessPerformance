@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineHome, AiFillStar, AiOutlineMail, AiFillHeart, AiOutlineProject } from "react-icons/ai";
-import { BsPerson } from 'react-icons/bs';
-import { GrProjects } from 'react-icons/gr';
+import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -19,27 +17,27 @@ function Navbar() {
     <div className='fixed w-full h-screen bg-white/40 flex flex-col justify-center items-center z-20'>
 
       <a onClick={handleNav} href='/' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <AiOutlineHome size={20} />
+        
         <span className='pl-4'>Home</span>
       </a>
       <a onClick={handleNav} href='/background' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-      <BsPerson size={20} /> 
+    
         <span className='pl-4'>Background</span>
       </a>
       <a onClick={handleNav} href='/corp' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <AiOutlineProject size={20} />
+       
         <span className='pl-4'>Corporate Inquiries</span>
       </a>
       <a onClick={handleNav} href='/testimonials'  rel="noopener noreferrer" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <AiFillStar size={20} />
+      
         <span className='pl-4'>Testimonials</span>
       </a>
       <a onClick={handleNav} href='/Thanks'  rel="noopener noreferrer" className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <AiFillHeart size={20} />
+      
         <span className='pl-4'>Thanks To</span>
       </a>
       <a onClick={handleNav} href='/contact' className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
-        <AiOutlineMail size={20} />
+       
         <span className='pl-4'>Contact</span>
       </a>
     </div>
